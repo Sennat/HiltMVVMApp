@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HiltMVVMApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_list">List</string>
+    <string name="title_create">Create</string>
+    <string name="app_desc">Fruityvice provides data for all kinds of fruit! With Fruityvice you can receive interesting data from any fruit of your choosing.</string>
+</resources>
