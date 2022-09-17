@@ -2,13 +2,14 @@ package com.project.hiltmvvmapp.ui.fragments
 
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
+import com.project.hiltmvvmapp.R
 import com.project.hiltmvvmapp.databinding.FragmentListBinding
 import com.project.hiltmvvmapp.model.Fruit
 import com.project.hiltmvvmapp.states.ResultState
+import com.project.hiltmvvmapp.ui.activities.MainActivity
 import com.project.hiltmvvmapp.viewAdapters.ListViewAdapter
 
 private const val TAG = "FruitsFragment"
@@ -40,7 +41,7 @@ class DashboardFragment : BaseFragment() {
                 is ResultState.LOADING -> {
                     Toast.makeText(requireContext(), "LOADING...", Toast.LENGTH_LONG).show()
                 }
-                is ResultState.SUCCESS -> {
+                is ResultState.SUCCESS<*> -> {
                     binding.progress.visibility = View.GONE
                     //Toast.makeText(requireContext(), state.fruits.lastOrNull()?.name, Toast.LENGTH_LONG).show()
                     binding.apply {

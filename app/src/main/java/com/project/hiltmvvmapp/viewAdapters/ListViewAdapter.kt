@@ -6,8 +6,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.project.hiltmvvmapp.databinding.FruitsListItemBinding
 import com.project.hiltmvvmapp.model.Fruit
 
-class ListViewAdapter(private val listItems: MutableList<Fruit> = mutableListOf()) :
-    RecyclerView.Adapter<ListViewAdapter.DashboardViewHolder>() {
+class ListViewAdapter(
+    private val listItems: MutableList<Fruit> = mutableListOf(),
+) : RecyclerView.Adapter<ListViewAdapter.DashboardViewHolder>() {
 
     fun updateFruitData(newList: List<Fruit>) {
         listItems.clear()
@@ -20,13 +21,14 @@ class ListViewAdapter(private val listItems: MutableList<Fruit> = mutableListOf(
         fun onBind(item: Fruit) {
             binding.apply {
                 txtFruitName.text = item.name
-                txtCarbValue.text = item.nutritions.carbohydrates.toString()
-                txtProteinValue.text = item.nutritions.protein.toString()
-                txtFat.text = item.nutritions.fat.toString()
+                txtCarbValue.text = " ${item.nutritions.carbohydrates} g"
+                txtProteinValue.text = " ${item.nutritions.protein} g"
+                txtFatValue.text = " ${item.nutritions.fat} g"
                 txtCaloriesValue.text = item.nutritions.calories.toString()
-                txtSugarValue.text = item.nutritions.sugar.toString()
+                txtSugarValue.text = " ${item.nutritions.sugar} g"
             }
         }
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DashboardViewHolder {

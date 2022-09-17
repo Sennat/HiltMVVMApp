@@ -5,8 +5,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Nutrition(
-    val carbohydrates: Int,
-    val protein: Int,
+    val carbohydrates: Double,
+    val protein: Double,
     val fat: Double,
     val calories: Int,
     val sugar: Double

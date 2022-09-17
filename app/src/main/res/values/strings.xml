@@ -1,7 +1,17 @@
 <resources>
     <string name="app_name">HiltMVVMApp</string>
     <string name="title_home">Home</string>
-    <string name="title_list">List</string>
-    <string name="title_create">Create</string>
-    <string name="app_desc">Fruityvice provides data for all kinds of fruit! With Fruityvice you can receive interesting data from any fruit of your choosing.</string>
+    <string name="title_list">List Fruit</string>
+    <string name="title_create">Create Fruit</string>
+    <string name="fruityvice">Make Healthier Choices</string>
+    <string name="app_desc">Fruityvice provides Nutrition Facts Label data for all kinds of fruit! With Fruityvice you can Make Healthier choices and receive interesting data from any fruit of your choosing.</string>
+    <string name="search">Search Fruit</string>
+    <string name="create_new_fruit">Create A New Fruit Data</string>
+    <string name="emptyInput">Empty field not allowed</string>
+    <string name="fat">Fat:  </string>
+    <string name="sugar">Sugar:</string>
+    <string name="calories">Calories:</string>
+    <string name="protein">Protein:</string>
+    <string name="carbohydrate">Carbohydrate:</string>
+    <string name="nutrition_facts">Nutrition Facts:</string>
 </resources>

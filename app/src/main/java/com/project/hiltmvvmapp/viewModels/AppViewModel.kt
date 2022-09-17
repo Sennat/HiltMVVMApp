@@ -19,10 +19,10 @@ class AppViewModel @Inject constructor(
 ) : ViewModel() {
 
     private val _fruitsLiveData : MutableLiveData<ResultState> = MutableLiveData(ResultState.LOADING)
-    val fruitsLiveData : LiveData<ResultState> get() = _fruitsLiveData
+    val fruitsLiveData : LiveData<ResultState> get() { return _fruitsLiveData }
 
     private val _newlyCreatedFruitsLiveData : MutableLiveData<ResultState> = MutableLiveData(ResultState.LOADING)
-    val newlyCreatedFruitsLiveData : LiveData<ResultState> get() = _newlyCreatedFruitsLiveData
+    val createFruitsLiveData : LiveData<ResultState> get() = _newlyCreatedFruitsLiveData
 
     init {
         getAllFruitsData()
